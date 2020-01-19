@@ -1,0 +1,5 @@
+/exam/.idea
+/exam/target/classes/com/tgh/exam/controller/*.class
+/exam/target/classes/static/layui/css
+/exam/target
+/exam/target/classes/META-INF
