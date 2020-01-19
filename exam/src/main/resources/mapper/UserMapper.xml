@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tgh.exam.dao.UserDao">
+    <select id="getAllUser" resultType="com.tgh.exam.domain.UserTest" >
+        SELECT * FROM userinfo;
+    </select>
+
+    <insert id="insert" parameterType="com.tgh.exam.domain.UserTest" useGeneratedKeys="true" keyProperty="userId">
+        insert into
+            userinfo(id,userName,age, sex)
+        values
+            (#{id},#{userName},#{age},#{sex})
+    </insert>
+</mapper>
